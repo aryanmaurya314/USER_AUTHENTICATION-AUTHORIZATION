@@ -25,11 +25,11 @@ For example models has the code base for user resource.
 This app requires Node.js v14+ to run.
 
 Install the dependencies and devDependencies and start the server.
-
+```
 cd auth-app
 npm install
 npm run devStart
-
+```
 ## REST endpoints
 1. Create a new movie
 POST /mba/api/v1/movies/
