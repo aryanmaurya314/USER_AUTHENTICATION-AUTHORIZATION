@@ -32,10 +32,10 @@ npm run devStart
 ```
 ## REST endpoints
 ### 1. Create a new user
-```
+```json
 POST /api/auth/register/
 Sample request body :
-- {
+{
     "name":"Aryan",
     "username":"Aryan10",
     "email":"aryan10@gmail.com",
@@ -47,7 +47,7 @@ Sample request body :
     }
 }
 Sample response body :
-- {
+{
     "name": "ARYAN",
     "username": "Aryan10",
     "email": "aryan10@gmail.com",
