@@ -31,42 +31,39 @@ npm install
 npm run devStart
 ```
 ## REST endpoints
-1. Create a new movie
-POST /mba/api/v1/movies/
+### 1. Create a new user
+```
+POST /api/auth/register/
 Sample request body :
 {
-        "name": "Sharmaji Namkeen",
-        "description": "Comedy Masala Movie",
-        "casts": [
-            "Rishi Kapoor",
-            "Juhi Chawla"
-        ],
-        "trailerUrl": "http://sharmajinamkeen/trailers/1",
-        "posterUrl": "http://sharmajisamkeen/posters/1",
-        "language": "Hindi",
-        "releaseDate": "31-03-2022",
-        "director": "Hitesh Bhatia",
-        "releaseStatus": "UNRELEASED"
+    "name":"Aryan",
+    "username":"Aryan10",
+    "email":"aryan10@gmail.com",
+    "password":"aryan",
+    "age":22,
+    "address":{
+        "city":"Varanasi",
+        "pincode":110045
+    }
 }
 
 Sample response body :
 {
-    "name": "Sharmaji Namkeen",
-    "description": "Comedy Masala Movie",
-    "casts": [
-        "Rishi Kapoor",
-        "Juhi Chawla"
-    ],
-    "trailerUrl": "http://sharmajinamkeen/trailers/1",
-    "posterUrl": "http://sharmajisamkeen/posters/1",
-    "language": "Hindi",
-    "releaseDate": "31-03-2022",
-    "director": "Hitesh Bhatia",
-    "releaseStatus": "RELEASED",
-    "_id": "6245ef42bddfa2ae0d2bba58",
-    "updatedAt": "2022-03-31T18:13:22.598Z",
+    "name": "ARYAN",
+    "username": "Aryan10",
+    "email": "aryan10@gmail.com",
+    "age": 22,
+    "isAdmin": false,
+    "address": {
+        "city": "VARANASI",
+        "pincode": 110045
+    },
+    "_id": "62bde034625f37ca7f4b273d",
+    "createdAt": "2022-06-30T17:41:08.235Z",
+    "updatedAt": "2022-06-30T17:41:08.235Z",
     "__v": 0
 }
+```
 2. Get all the movies
 GET /mba/api/v1/movies/
 
