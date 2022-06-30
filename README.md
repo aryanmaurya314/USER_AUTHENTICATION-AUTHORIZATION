@@ -1,4 +1,4 @@
-# AUTH APP [User Authentication and Authorization]
+# AUTH APP User Authentication and Authorization
 ## *Learning the development of RESTful APIs for backend*
 This code base contains logic/structure for creating the Restful APIs for the auth app
 
@@ -35,6 +35,7 @@ npm run devStart
 ```
 POST /api/auth/register/
 Sample request body :
+```
 {
     "name":"Aryan",
     "username":"Aryan10",
@@ -46,8 +47,9 @@ Sample request body :
         "pincode":110045
     }
 }
-
+```
 Sample response body :
+```
 {
     "name": "ARYAN",
     "username": "Aryan10",
@@ -63,6 +65,7 @@ Sample response body :
     "updatedAt": "2022-06-30T17:41:08.235Z",
     "__v": 0
 }
+```
 ```
 2. Get all the movies
 GET /mba/api/v1/movies/
