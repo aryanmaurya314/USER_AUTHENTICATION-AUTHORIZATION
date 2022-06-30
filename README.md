@@ -199,4 +199,4 @@ Sample response body :
 ### POSTMAN collection [link](https://www.getpostman.com/collections/b3f56b7ea21119befd9d)
 
 ## Development
-Want to improve? Great! Make the changes and raise a PR. Reach out to me over (aryanmaurya314@gmail.com)
+Want to improve? Great! Make the changes and raise a PR. Reach out to me over aryanmaurya314@gmail.com
