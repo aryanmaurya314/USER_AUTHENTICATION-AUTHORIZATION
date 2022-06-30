@@ -35,8 +35,7 @@ npm run devStart
 ```
 POST /api/auth/register/
 Sample request body :
-```
-{
+- {
     "name":"Aryan",
     "username":"Aryan10",
     "email":"aryan10@gmail.com",
@@ -47,10 +46,8 @@ Sample request body :
         "pincode":110045
     }
 }
-```
 Sample response body :
-```
-{
+- {
     "name": "ARYAN",
     "username": "Aryan10",
     "email": "aryan10@gmail.com",
@@ -65,7 +62,6 @@ Sample response body :
     "updatedAt": "2022-06-30T17:41:08.235Z",
     "__v": 0
 }
-```
 ```
 2. Get all the movies
 GET /mba/api/v1/movies/
