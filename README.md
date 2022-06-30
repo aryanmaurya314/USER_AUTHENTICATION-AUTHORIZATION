@@ -124,7 +124,7 @@ Sample response body :
 }
 ```
 
-### . Get all 5 new users by admin only
+### 4. Get all users with optional query by admin only
 ```json
 GET /api/users?new=true           - gives 5 newly registered user like this
 GET /api/users?name="ary"         - gives all the users with name containing query letters
@@ -151,7 +151,7 @@ Sample response body :
     "__v": 0
 }
 ```
-### 4. Update user by itself and admin only using object id
+### 5. Update user by itself and admin only using object id
 ```json
 PUT /api/users/62bde034625f37ca7f4b273d
 
@@ -182,7 +182,7 @@ Sample response body :
     "__v": 0
 }
 ```
-### 5. Delete a user by admin only using object id
+### 6. Delete a user by admin only using object id
 ```json
 DELETE /api/users/62bde034625f37ca7f4b273d
 
