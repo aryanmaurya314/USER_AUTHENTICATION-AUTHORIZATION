@@ -8,13 +8,13 @@ const router = require("express").Router();
 
 // ################################ USER ROUTES ################################## //
 // route to update user datails //
-router.put("/:id", [isOwnerOrAdmin, isUser_idValid], updateUser);
+router.put("/:id", [isUser_idValid, isOwnerOrAdmin], updateUser);
 
 // route to delete user //
-router.delete("/:id", [isUserAdmin, isUser_idValid], deleteUser);
+router.delete("/:id", [isUser_idValid, isUserAdmin], deleteUser);
 
 // route to user datails //
-router.get("/find/:id", [isUserAdmin, isUser_idValid], getUser);
+router.get("/find/:id", [isUser_idValid, isUserAdmin], getUser);
 
 // route to all users datails //
 /*  querry search :
